@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(199, 237, 255);
+  font-family: geneva;
+  margin: 3% 5%;
+  max-width: 75ch;
+}
+h1 {
+  color: rgb(223, 57, 6);
+}
+.forfattere {
+  font-size: small;
+  margin-bottom: 0%;
+}
+.navn {
+  font-size: small;
+  margin-top: 0px;
+}
