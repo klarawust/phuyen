@@ -42,16 +42,16 @@
     <p>
       Nettsiden skal ha en global navigasjonsstruktur, som innebærer at
       navigasjonen og lenkene i menyen i headeren skal være identiske på tvers
-      av nettsiden, og headeren skal ha en statisk posisjon på skjermen og den
+      av nettsiden. Headeren skal ha en statisk posisjon på skjermen og den
       skal følge med nedover når brukeren scroller. Det skal være mulig å nå
-      hvilken som helst side fra hvilken som helst side, og alt skal være ett
+      hvilken som helst side fra hvilken som helst annen side, og alt skal være ett
       klikk unna. Grunnen til at vi har valgt en global navigasjonsstruktur er
       at de tenkte brukerne ikke skal tilbringe mye tid på nettsiden, og gjerne
       ønsker å finne informasjonen de er ute etter så fort som mulig og med så
       få klikk som mulig. En nettside med en mer komplisert navigasjonsstruktur
       med for mange undermenyer og undersider ville vært kontraintuitivt i dette
       tilfellet. Om brukergrensesnittet blir for komplisert vil det i verste
-      fall kunne føre til at brukeren blir frustert og velger en annen
+      fall kunne føre til at brukeren blir frustrert og velger en annen
       restaurant. I de aller fleste tilfeller vil den tenkte brukeren kun
       benytte nettsiden for å lese gjennom menyen eller finne ut av
       åpningstider.
@@ -75,13 +75,22 @@
     <img src="images/Forside.png" alt="Forside" />
 
     <ul>
-      <li>Skrifttype: Lato</li>
+      <li>Skrift 
+        <ul>
+          <li>
+            Type: Lato
+          </li>
+          <li>
+              Størrelser: 16 pt i navbar. 12 pt i annen tekst. 20 pt i kontaktinformasjon
+          </li>
+        </ul>
+      </li>
       <li>Fargetema:</li>
       <ul>
         <li>Bakgrunn: off-white, svakt mønstret</li>
         <li>Navbar: eggeskall-hvit/beige</li>
-        <li>Tekst: rød og svart</li>
-        <li>Lenker: rød og svart</li>
+        <li>Tekst: rød, svart og grønn</li>
+        <li>Lenker: rød, svart og grønn</li>
       </ul>
       <li>
         Lenker: Logoen/hovudtittelen "Phu Yen" vil være klikkbar og ta brukeren
@@ -106,25 +115,24 @@
       brukeren kan klikke seg videre til andre sider. Hensikten med startsiden
       er å gi brukeren et førsteinntrykk av restauranten og å gi en tydelig
       oversikt over hvilken informasjon som er tilgjengelig. For at brukeren
-      skal få et førsteinntrykk av restauranten vil det være et stemningsbilde
-      fra restauranten i bakgrunnen på siden. Logo til restauranten vil også
+      skal få et førsteinntrykk av restauranten vil det være en bildekarusell med stemningsbilder i midten
+      av siden. Logoen til restauranten vil også
       være øverst på siden. Skiltet til restauranten har et personlig og unikt
       preg, og det bygger opp under inntrykket av restauranten på en mer
       nøyaktig måte enn generisk tekst. Ellers vil det være lite innhold på
       startsiden for å ikke overvelde brukeren, og for at siden skal kunne laste
       raskt. Det er viktig at det ikke er for mye informasjon, ettersom
       startsiden kun skal gi brukeren en oversikt over hvilke andre sider som er
-      tilgjengelige. Derfor vil det være store og tydelige knapper i midten av
-      skjermen brukeren kan trykke seg videre på.
+      tilgjengelige. Derfor vil det være store og tydelige knapper over bildet brukeren kan trykke seg videre på.
     </p>
     <img src="images/Forside.png" alt="Forside" />
     <h3>Meny - <i>menu.html</i></h3>
     <p>
       Menysiden skal gi brukeren informasjon om matretter, priser og catering.
       Det er viktig at denne siden kun viser en enkelt navigerbar meny. Seksjonene av menyen er 
-      tilgjengelig på siden for enkel navigering. Menyen
-      er skrevet på hvit bakgrunn for å gjøre det enklest mulig å lese.
-      Menylinjen er tilgjengelig øverst slik at man nkelt kan navigere seg til
+      tilgjengelig på siden for enkel navigering. I tillegg er seksjonene tilgjengelige som en drop-down meny 
+      når man er på andre sider. Menyen er skrevet på hvit bakgrunn for å gjøre det enklest mulig å lese.
+      Menylinjen er tilgjengelig øverst slik at man enkelt kan navigere seg til
       en annen side. Både navn på rett, en rask beskrivelse og pris er
       tilgjengelig. Det er også markert om retten er vegetar eller inneholder
       allergener, og dette kan man filtrere på ved å huke av i bokser. Ved
@@ -168,13 +176,13 @@
     <p>
       Denne siden inneholder annen relevant informasjon om restauranten.
       Hensikten med siden er å formidle viktig og relevant informasjon til
-      brukeren. Dette oppnås gjennom en kombinasjon av elementer. På venstre
+      brukeren. Til høyre på
       siden står kontaktinformasjon (telefon, e-post og adresse) og
-      åpningstider. På høyre side er det et Google Maps-utsnitt som viser
+      åpningstider. På venstre side er det et Google Maps-utsnitt som viser
       restaurantens lokasjon på et kart. Nederst på siden er det et
       Facebook-utsnitt som viser Facebooksiden til restauranten. Thanh pleier å
       poste oppdateringer om restauranten på Facebook, og dette er en effektiv
-      måte å gi brukere informasjon om hendelser, f.eks. tilbud eller om
+      måte å gi brukere informasjon om hendelser, f.eks. anmeldelser, tilbud eller om
       restauranten uforutsett må holde stengt. I tillegg hjelper det
       interesserte brukere til å følge restauranten på Facebook.
       Kontaktinformasjon, åpningsstider og lokasjon er essensiell informasjon
