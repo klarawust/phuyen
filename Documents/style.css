@@ -7,11 +7,23 @@ body {
 h1 {
   color: rgb(223, 57, 6);
 }
+
 .forfattere {
   font-size: small;
   margin-bottom: 0%;
 }
+
 .navn {
   font-size: small;
   margin-top: 0px;
+}
+
+th, td {
+  text-align: left;
+  border: 1px solid black;
+  padding: 15px;
+}
+
+table {
+  border: 1px solid black;
 }
