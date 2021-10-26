@@ -1,6 +1,6 @@
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #eeeded;
   position: fixed;
   top: 0%;
   left: 0%;
@@ -29,7 +29,7 @@
   color: rgb(216, 24, 24);
 }
 body {
-  background-color: #faf9f5;
+  background-color: #f8f6ee;
   margin-top: 100px;
 }
 
