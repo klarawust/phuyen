@@ -28,14 +28,28 @@
 .header .links a:hover {
   color: rgb(216, 24, 24);
 }
-body {
-  background-color: #f8f6ee;
-  margin-top: 100px;
-}
 
 #logo {
   position: relative;
   width: 30%;
   align-items: baseline;
   padding-top: 10px;
+}
+
+body {
+  background-color: #f8f6ee;
+  margin-top: 100px;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #eeeded;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 12px;
+  border-top: 3px solid rgb(216, 24, 24);
 }

@@ -42,16 +42,17 @@ footerDiv.className = "footer";
 
 const addressParagraph = document.createElement("p");
 addressParagraph.className = "footerText";
-addressParagraph.innerHTML = "Besøksadresse: Repslagerveita 2";
-const emailParagraph = document.createElement("p");
-emailParagraph.className = "footerText";
-emailParagraph.innerHTML = "Email: phu@yen.no";
+addressParagraph.innerHTML = "Besøksadresse: Repslagerveita 2, 7012 Trondheim";
 const phoneParagraph = document.createElement("p");
 phoneParagraph.className = "footerText";
-phoneParagraph.innerHTML = "Telefonummer: 22 22 22 22";
+phoneParagraph.innerHTML = "Telefonummer: 73 52 99 50";
+const creditParagraph = document.createElement("p");
+creditParagraph.className = "footerText";
+creditParagraph.innerHTML =
+  "Nettside laget av: Aksel, Eiril, Erik, Jens og Klara Wüstenberg, ved NTNU Trondheim (2021)";
 
-footerDiv.appendChild(addressParagraph);
-footerDiv.appendChild(emailParagraph);
 footerDiv.append(phoneParagraph);
+footerDiv.appendChild(addressParagraph);
+footerDiv.append(creditParagraph);
 
 document.body.appendChild(footerDiv);
