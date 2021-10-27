@@ -35,6 +35,7 @@ body {
 
 #logo {
   position: relative;
-  width: 15%;
-  padding-bottom: 10px;
+  width: 30%;
+  align-items: baseline;
+  padding-top: 10px;
 }
