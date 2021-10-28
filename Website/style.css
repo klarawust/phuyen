@@ -53,6 +53,7 @@ body {
     "Lucida Sans", Arial, sans-serif;
   font-size: 12px;
   border-top: 3px solid rgb(216, 24, 24);
+  z-index: 99;
 }
 
 /*HOMEPAGE:*/
