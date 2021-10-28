@@ -6,6 +6,7 @@
   left: 0%;
   right: 0%;
   border-bottom: 3px solid rgb(216, 24, 24);
+  z-index: 99;
 }
 .header .links {
   display: flex;
@@ -17,7 +18,7 @@
   text-align: center;
   text-decoration: none;
   font-size: 16pt;
-  font-size: 1.7vw;
+  font-size: 1.3vw;
   font-family: Andale Mono, monospace;
 
   position: relative;
@@ -31,7 +32,7 @@
 
 #logo {
   position: relative;
-  width: 30%;
+  width: 23%;
   align-items: baseline;
   padding-top: 10px;
 }
@@ -52,4 +53,66 @@ body {
     "Lucida Sans", Arial, sans-serif;
   font-size: 12px;
   border-top: 3px solid rgb(216, 24, 24);
+}
+
+/*HOMEPAGE:*/
+
+.image-carousel {
+  width: 60%;
+  max-width: 40vw;
+  position: relative;
+  margin-top: 3vw;
+  padding-bottom: 3vw;
+  margin-left: 5vw;
+  z-index: 1;
+  float: left;
+}
+.slides {
+  display: none;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 11vw;
+  width: auto;
+  padding: 16px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.number {
+  color: #fdfdfd;
+  font-size: 14px;
+  padding: 8px 12px;
+  position: absolute;
+  font-family: Andale Mono, monospace;
+}
+
+.velkommen {
+  width: 40%;
+  float: left;
+  padding: 20px;
+}
+.velkommen h1 {
+  font-family: Andale Mono, monospace;
+  color: rgb(122, 3, 3);
+}
+.velkommen p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.velkommen p1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(223, 45, 45);
 }
