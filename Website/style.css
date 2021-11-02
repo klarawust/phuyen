@@ -117,3 +117,14 @@ body {
     "Lucida Sans", Arial, sans-serif;
   color: rgb(223, 45, 45);
 }
+
+/*MENU*/
+
+.menu {
+  margin: 10% 10% 10%;
+  text-align: center;
+}
+.menu p{
+  display: inline-block;
+  max-width: 500px;
+}
