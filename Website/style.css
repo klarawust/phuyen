@@ -118,3 +118,23 @@ body {
     "Lucida Sans", Arial, sans-serif;
   color: rgb(223, 45, 45);
 }
+
+
+/*IMAGES:*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 8px;
+}
+
+.column {
+  flex: 20%;
+  max-width: 25%;
+  padding: 0 5px;
+}
+
+.column img {
+  margin-top: 10px;
+  vertical-align: middle;
+  width: 100%; 
+}
