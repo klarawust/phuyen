@@ -11,7 +11,7 @@ menuLink.innerHTML = "Meny";
 
 const infoLink = document.createElement("a");
 infoLink.href = "info.html";
-infoLink.innerHTML = "Info";
+infoLink.innerHTML = "Info/kontakt";
 
 const homepageLink = document.createElement("img");
 homepageLink.id = "logo";
@@ -29,8 +29,8 @@ aboutLink.innerHTML = "Om oss";
 linksDiv.appendChild(menuLink);
 linksDiv.appendChild(infoLink);
 linksDiv.appendChild(homepageLink);
-linksDiv.appendChild(imagesLink);
 linksDiv.appendChild(aboutLink);
+linksDiv.appendChild(imagesLink);
 
 headerDiv.appendChild(linksDiv);
 
