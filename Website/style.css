@@ -147,3 +147,4 @@ body {
 .menu p{
   display: inline-block;
   max-width: 500px;
+  border: solid 2px rgb(216, 24, 24);
