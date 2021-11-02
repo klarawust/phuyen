@@ -142,6 +142,7 @@ body {
 
 /*Widgets*/
 
-.fb-page {
+.FacebookWidget {
   float: right;
+  position: relative;
 }
