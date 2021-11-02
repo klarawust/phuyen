@@ -145,6 +145,8 @@ body {
 .FacebookWidget {
   float: right;
   position: relative;
+  width: 400px;
+  height: 500px;
 }
 =======
 /*MENU*/
