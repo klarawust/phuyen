@@ -137,3 +137,10 @@ body {
   vertical-align: middle;
   width: 100%; 
 }
+
+
+/*Widgets*/
+
+.fb-page {
+  float: right;
+}
