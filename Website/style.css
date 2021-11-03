@@ -48,6 +48,7 @@ img {
 
 /*All elements with lots of text*/
 article {
+  position: absolute;
   font-family: Andale Monoe, monospace;
   max-width: 75%;
   font-size: 12px;
