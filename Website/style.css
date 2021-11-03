@@ -25,6 +25,7 @@ article {
 /* HEADER */
 .header {
   overflow: hidden;
+  width: 100%;
   background-color: #eeeded;
   border-bottom: 3px solid rgb(216, 24, 24);
 }
