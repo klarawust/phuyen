@@ -17,6 +17,7 @@ infoLink.innerHTML = "Info/kontakt";
 const logo = document.createElement("img");
 const homepageLink = document.createElement("a");
 homepageLink.href = "homepage.html";
+homepageLink.id = "homepageLink";
 logo.id = "logo";
 logo.src = "images/Phuyenlogo.png";
 logo.alt = "Logo";
