@@ -3,7 +3,7 @@ const headerDiv = document.createElement("div");
 headerDiv.className = "header";
 
 const linksDiv = document.createElement("div");
-linksDiv.className = "links";
+linksDiv.id = "links";
 
 const menuLink = document.createElement("a");
 menuLink.href = "menu.html";
