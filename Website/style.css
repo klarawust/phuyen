@@ -1,33 +1,53 @@
+/* COMMON - styling used for all pages*/
+body {
+  margin: 0;
+  background-color: #f8f6ee;
+}
+
+img {
+  max-width: 100%; /*Ensure no images overflow screen*/
+}
+
+article {
+  font-family: Andale Monoe, monospace;
+  max-width: 50%;
+  font-size: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+/* HEADER */
 .header {
   overflow: hidden;
   background-color: #eeeded;
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  right: 0%;
   border-bottom: 3px solid rgb(216, 24, 24);
-  z-index: 99;
 }
-.header .links {
+
+#links {
   display: flex;
   justify-content: space-between;
   padding: 0% 8% 0% 8%;
   align-items: baseline;
-  
+  font-family: Andale Mono, monospace;
+  font-size: 1.3vw;
 }
-.header .links a {
+
+#links a {
+  position: relative;
   text-align: center;
   text-decoration: none;
-  font-size: 16pt;
-  font-size: 1.3vw;
-  font-family: Andale Mono, monospace;
-
-  position: relative;
   color: black;
   width: 9vw;
   height: 3vw;
 }
-.header .links a:hover {
+
+#links a:hover {
   color: rgb(216, 24, 24);
 }
 
@@ -38,23 +58,7 @@
   padding-top: 10px;
 }
 
-body {
-  background-color: #f8f6ee;
-}
-
-img {
-  max-width: 100%; /*Ensure no images overflow screen*/
-}
-
-/*All elements with lots of text*/
-article {
-  font-family: Andale Monoe, monospace;
-  max-width: 50%;
-  font-size: 12px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
+/* FOOTER */
 .footer {
   position: absolute;
   left: 0;

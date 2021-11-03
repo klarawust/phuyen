@@ -1,9 +1,10 @@
 /** Initialize header */
 const headerDiv = document.createElement("div");
 headerDiv.className = "header";
+headerDiv.id = "header";
 
 const linksDiv = document.createElement("div");
-linksDiv.className = "links";
+linksDiv.id = "links";
 
 const menuLink = document.createElement("a");
 menuLink.href = "menu.html";
@@ -56,3 +57,16 @@ footerDiv.appendChild(addressParagraph);
 footerDiv.append(creditParagraph);
 
 document.body.appendChild(footerDiv);
+window.addEventListener("scroll", setStickyHeader); // dynamically set header to be sticky
+
+function setStickyHeader() {
+  var header = document.getElementById("header");
+
+  if (window.scrollY > 0) {
+    header.classList.add("sticky");
+    document.body.style.paddingTop = String(header.offsetHeight) + 'px';
+  } else {
+    header.classList.remove("sticky");
+    document.body.style.paddingTop = 0;
+  }
+}
