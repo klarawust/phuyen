@@ -1,6 +1,6 @@
 /* COMMON - styling used for all pages*/
 body {
-  margin-top: 10%; /* Ensure content is always below header */
+  margin: 0;
   background-color: #f8f6ee;
 }
 
@@ -17,15 +17,10 @@ article {
 }
 
 /* HEADER */
-.header {
+#header {
   overflow: hidden;
   background-color: #eeeded;
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  right: 0%;
   border-bottom: 3px solid rgb(216, 24, 24);
-  z-index: 99;
 }
 
 #links {
@@ -44,7 +39,6 @@ article {
   color: black;
   width: 9vw;
   height: 3vw;
-
 }
 
 #links a:hover {

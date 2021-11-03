@@ -1,6 +1,6 @@
 /** Initialize header */
 const headerDiv = document.createElement("div");
-headerDiv.className = "header";
+headerDiv.id = "header";
 
 const linksDiv = document.createElement("div");
 linksDiv.id = "links";
@@ -56,3 +56,16 @@ footerDiv.appendChild(addressParagraph);
 footerDiv.append(creditParagraph);
 
 document.body.appendChild(footerDiv);
+window.addEventListener("scroll", setStickyHeader); // dynamically set header to be sticky
+
+function setStickyHeader() {
+  var header = document.getElementById("header");
+
+  if (window.scrollY > 0) {
+    header.style.position = "fixed";
+    header.style.top = 0;
+    header.style.zIndex = 99;
+  } else {
+    header.style.position = "static";
+  }
+}
