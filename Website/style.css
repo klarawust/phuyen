@@ -16,8 +16,14 @@ article {
   margin-right: auto;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
 /* HEADER */
-#header {
+.header {
   overflow: hidden;
   background-color: #eeeded;
   border-bottom: 3px solid rgb(216, 24, 24);

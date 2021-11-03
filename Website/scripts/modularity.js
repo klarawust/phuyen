@@ -1,5 +1,6 @@
 /** Initialize header */
 const headerDiv = document.createElement("div");
+headerDiv.className = "header";
 headerDiv.id = "header";
 
 const linksDiv = document.createElement("div");
@@ -62,10 +63,10 @@ function setStickyHeader() {
   var header = document.getElementById("header");
 
   if (window.scrollY > 0) {
-    header.style.position = "fixed";
-    header.style.top = 0;
-    header.style.zIndex = 99;
+    header.classList.add("sticky");
+    document.body.style.paddingTop = String(header.offsetHeight) + 'px';
   } else {
-    header.style.position = "static";
+    header.classList.remove("sticky");
+    document.body.style.paddingTop = 0;
   }
 }
