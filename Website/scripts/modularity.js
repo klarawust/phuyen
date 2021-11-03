@@ -14,10 +14,13 @@ const infoLink = document.createElement("a");
 infoLink.href = "info.html";
 infoLink.innerHTML = "Info/kontakt";
 
-const homepageLink = document.createElement("img");
-homepageLink.id = "logo";
-homepageLink.src = "images/Phuyenlogo.png";
-homepageLink.alt = "Logo";
+const logo = document.createElement("img");
+const homepageLink = document.createElement("a");
+homepageLink.href = "homepage.html";
+logo.id = "logo";
+logo.src = "images/Phuyenlogo.png";
+logo.alt = "Logo";
+homepageLink.appendChild(logo);
 
 const imagesLink = document.createElement("a");
 imagesLink.href = "images.html";
