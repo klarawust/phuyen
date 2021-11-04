@@ -12,6 +12,16 @@ h1 {
   font-family: Andale Mono, monospace;
   color: rgb(122, 3, 3);
 }
+h2 {
+  font-family: Andale Mono, monospace;
+  color: rgb(184, 12, 12);
+  font-size: 1.3vw;
+}
+h3 {
+  font-family: Andale Mono, monospace;
+  color: rgb(245, 51, 51);
+  font-size: 1vw;
+}
 p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -212,7 +222,7 @@ p {
 .menu p {
   display: inline-block;
   max-width: 500px;
-  border: solid 2px rgb(216, 24, 24);
+  padding: 15px;
 }
 
 /*ABOUT*/
