@@ -68,7 +68,7 @@ function setStickyHeader() {
 
   if (window.scrollY > 0) {
     header.classList.add("sticky");
-    document.body.style.paddingTop = String(header.offsetHeight) + 'px';
+    document.body.style.paddingTop = String(header.offsetHeight) + "px";
   } else {
     header.classList.remove("sticky");
     document.body.style.paddingTop = 0;
