@@ -40,6 +40,9 @@ p {
   background-color: #eeeded;
   border-bottom: 3px solid rgb(216, 24, 24);
 }
+#homepageLink {
+  width: 18vw !important;
+}
 
 #links {
   display: flex;
@@ -69,7 +72,6 @@ p {
   align-items: baseline;
   padding-top: 10px;
 }
-
 /* FOOTER */
 .footer {
   position: absolute;
@@ -80,9 +82,8 @@ p {
   text-align: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-size: 12px;
+  font-size: 8px;
   border-top: 3px solid rgb(216, 24, 24);
-  z-index: 99;
 }
 
 /*HOMEPAGE:*/
@@ -214,13 +215,13 @@ p {
 /*MENU*/
 
 #menu {
-  margin: 10% 10% 10%;
+  margin: 0% 7% 0% 7%;
   text-align: center;
 }
 #menu p {
   display: inline-block;
   max-width: 500px;
-  padding: 15px;
+  padding: 20px;
 }
 
 /*ABOUT*/
@@ -228,7 +229,7 @@ p {
   position: relative;
   float: left;
   width: 30%;
-  padding: 2% 0% 0% 10%;
+  padding: 2% 0% 5% 10%;
 }
 #facade {
   position: relative;
