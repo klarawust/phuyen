@@ -189,7 +189,8 @@ align-self: center;
   max-height: 550px;
   max-width: 850px;
   justify-content: left;
-  padding-right: 10%;
+  padding-right: 4%;
+  padding-left: 1%;
   float: left;
   }
 
@@ -205,10 +206,9 @@ align-self: center;
 
 .FacebookWidget {
   justify-content: right;
-  float: right;
+  float: left;
   position: relative;
-  padding-right: 5%;
-  padding-left: 10%;
+  padding-left: 4%;
   width: 400px;
   height: 500px;
 }
