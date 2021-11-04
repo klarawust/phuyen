@@ -8,12 +8,15 @@ img {
   max-width: 100%; /*Ensure no images overflow screen*/
 }
 
-article {
-  font-family: Andale Monoe, monospace;
-  max-width: 50%;
-  font-size: 12px;
-  margin-left: auto;
-  margin-right: auto;
+h1 {
+  font-family: Andale Mono, monospace;
+  color: rgb(122, 3, 3);
+}
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: black;
+  line-height: 1.8em;
 }
 
 .sticky {
@@ -80,10 +83,9 @@ article {
   width: 60%;
   max-width: 40vw;
   position: relative;
-  margin-top: 6vw;
+  margin-top: 2vw;
   padding-bottom: 3vw;
   margin-left: 5vw;
-  z-index: 1;
   float: left;
 }
 .slides {
@@ -121,19 +123,10 @@ article {
   width: 40%;
   float: left;
   padding-left: 50px;
-  margin-top: 6vw;
+  margin-top: 2vw;
 }
-.velkommen h1 {
-  font-family: Andale Mono, monospace;
-  color: rgb(122, 3, 3);
-}
-.velkommen p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-.velkommen p1 {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+
+#bestill {
   color: rgb(223, 45, 45);
 }
 
@@ -153,20 +146,19 @@ article {
 .column img {
   margin-top: 10px;
   vertical-align: middle;
-  width: 100%; 
+  width: 100%;
 }
-
 
 /*Info page*/
 
 .container {
   width: 94%;
-float: left;
-justify-content: center;
-padding-left: 2%;
-padding-top: 6%;
-padding-right: 2%;
-align-self: center;
+  float: left;
+  justify-content: center;
+  padding-left: 2%;
+  padding-top: 6%;
+  padding-right: 2%;
+  align-self: center;
 }
 
 .ul {
@@ -180,7 +172,6 @@ align-self: center;
   float: left;
   padding-left: 2%;
   padding-right: 2%;
-  
 }
 
 .mapouter {
@@ -191,17 +182,17 @@ align-self: center;
   justify-content: left;
   padding-right: 10%;
   float: left;
-  }
+}
 
-  .gmap_canvas {
-    overflow: hidden;
-    background: none !important;
-    height: 500px;
-    width: 600px;
-    float: left;
-    justify-content: left;
-    padding: auto;
-  }
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 600px;
+  float: left;
+  justify-content: left;
+  padding: auto;
+}
 
 .FacebookWidget {
   justify-content: right;
@@ -218,15 +209,22 @@ align-self: center;
   margin: 10% 10% 10%;
   text-align: center;
 }
-.menu p{
+.menu p {
   display: inline-block;
   max-width: 500px;
   border: solid 2px rgb(216, 24, 24);
 }
 
 /*ABOUT*/
+#aboutustext {
+  position: relative;
+  float: left;
+  width: 30%;
+  padding: 2% 0% 0% 10%;
+}
 #facade {
-  float: right;
-  max-width: 300px;
-  margin-left: 3%;
+  position: relative;
+  float: left;
+  width: 40%;
+  padding: 7% 10% 0% 10%;
 }
