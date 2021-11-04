@@ -1,5 +1,7 @@
 /* COMMON - styling used for all pages*/
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   background-color: #f8f6ee;
 }
@@ -74,9 +76,6 @@ p {
 }
 /* FOOTER */
 .footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
   width: 100%;
   background-color: #eeeded;
   text-align: center;
