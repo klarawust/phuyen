@@ -54,7 +54,7 @@ p {
 #links {
   display: flex;
   justify-content: space-between;
-  padding: 0% 8% 0% 8%;
+  padding: 0% 8%;
   align-items: baseline;
   font-family: Andale Mono, monospace;
   font-size: 1.3vw;
@@ -96,7 +96,6 @@ p {
   max-width: 40vw;
   position: relative;
   margin-top: 2vw;
-  padding-bottom: 3vw;
   margin-left: 5vw;
   float: left;
 }
