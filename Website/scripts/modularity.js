@@ -61,6 +61,7 @@ footerDiv.appendChild(addressParagraph);
 footerDiv.append(creditParagraph);
 
 document.body.appendChild(footerDiv);
+
 window.addEventListener("scroll", setStickyHeader); // dynamically set header to be sticky
 
 function setStickyHeader() {
