@@ -8,6 +8,7 @@ linksDiv.id = "links";
 
 const menuLink = document.createElement("a");
 menuLink.href = "menu.html";
+menuLink.id = "menuLink"
 menuLink.innerHTML = "Meny";
 
 const infoLink = document.createElement("a");
@@ -61,6 +62,7 @@ footerDiv.appendChild(addressParagraph);
 footerDiv.append(creditParagraph);
 
 document.body.appendChild(footerDiv);
+
 window.addEventListener("scroll", setStickyHeader); // dynamically set header to be sticky
 
 function setStickyHeader() {
@@ -68,7 +70,7 @@ function setStickyHeader() {
 
   if (window.scrollY > 0) {
     header.classList.add("sticky");
-    document.body.style.paddingTop = String(header.offsetHeight) + 'px';
+    document.body.style.paddingTop = String(header.offsetHeight) + "px";
   } else {
     header.classList.remove("sticky");
     document.body.style.paddingTop = 0;
