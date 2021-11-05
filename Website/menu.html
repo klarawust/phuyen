@@ -15,6 +15,64 @@
       <input type="checkbox" />
     </div>
 
+    <!--JAVASCRIPT MENY-->
+    <script>
+      document
+        .getElementById(hideAllergi)
+        .addEventListener("click", function () {
+          const items = document.getElementsByClassName("mel");
+          for (let i = 0; i < items.length; i++) {
+            items[i].style.display = "none";
+          }
+        });
+
+      const overskrifter = [
+        "Forretter",
+        "Hovedretter",
+        "Barnemeny",
+        "Desserter",
+        "Varm drikke",
+      ];
+      const menu = [
+        [
+          ["1. Peking suppe"][""]["Kr 59"],
+          ["2. Kung fu suppe"][""]["Kr 59"],
+          ["Vietnamesiske vårruller"]["(svinekjøtt, glassnudler)"]["Kr 59"],
+          ["Kinesiske vårruller"]["(svinekjøtt, innbakt hodekål)"]["Kr 59"],
+        ][
+          (["Rett"]["ingredienser"]["pris"],
+          ["Rett"]["ingredienser"]["pris"],
+          ["Rett"]["ingredienser"]["pris"])
+        ][
+          (["Rett"]["ingredienser"]["pris"],
+          ["Rett"]["ingredienser"]["pris"],
+          ["Rett"]["ingredienser"]["pris"])
+        ][
+          (["Rett"]["ingredienser"]["pris"],
+          ["Rett"]["ingredienser"]["pris"],
+          ["Rett"]["ingredienser"]["pris"])
+        ][
+          (["Rett"]["ingredienser"]["pris"],
+          ["Rett"]["ingredienser"]["pris"],
+          ["Rett"]["ingredienser"]["pris"])
+        ],
+      ];
+      for (let j = 0; j < menu.length; j++) {
+        document.getElementById("menu").innerHTML +=
+          "<h1>" + overskrifter[j] + "</h1>";
+        for (let i = 0; i < menu[i].length; i++) {
+          document.getElementById("menu").innerHTML +=
+            "<li class=menuElement" +
+            menu[j][i][2] +
+            "/>" +
+            menu[j][i][0] +
+            "<br>" +
+            menu[j][i][2] +
+            "</li>";
+        }
+      }
+    </script>
+    <!--
     <div id="menu">
       <h1>Forretter</h1>
       <p>
@@ -130,10 +188,10 @@
         Kr 235
       </p>
 
-      <!--<p>
+      <p>
           Pho ris nudler Kr 185 <br />Biffskiver, okseboller, scampi
           (bønnespirer, vårløk, lime)
-          </p>-->
+          </p>
 
       <h2>Kylling</h2>
       <p>
@@ -552,6 +610,7 @@
         Kr 45
       </p>
     </div>
+  -->
     <script src="scripts/modularity.js"></script>
   </body>
 </html>
