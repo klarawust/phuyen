@@ -50,12 +50,17 @@ addressParagraph.className = "footerText";
 addressParagraph.innerHTML = "Besøksadresse: Repslagerveita 2, 7012 Trondheim";
 const phoneParagraph = document.createElement("p");
 phoneParagraph.className = "footerText";
-phoneParagraph.innerHTML = "Telefonummer: 73 52 99 50";
+phoneParagraph.innerHTML = "Telefonummer: ";
+const number = document.createElement("a");
+number.className = "doclinks";
+number.href = "tel:0047 73 52 99 50";
+number.innerHTML = "73 52 99 50";
 const creditParagraph = document.createElement("p");
 creditParagraph.className = "footerText";
 creditParagraph.innerHTML =
   "Nettside laget av: Aksel, Eiril, Erik, Jens og Klara Wüstenberg, ved NTNU Trondheim (2021)";
 
+phoneParagraph.append(number);
 footerDiv.append(phoneParagraph);
 footerDiv.appendChild(addressParagraph);
 footerDiv.append(creditParagraph);

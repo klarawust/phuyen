@@ -32,7 +32,13 @@ p {
   font-size: 15px;
   line-height: 1.8em;
 }
-
+.doclinks {
+  color: rgb(190, 21, 21);
+  text-decoration: none;
+}
+.doclinks:hover {
+  text-decoration: underline;
+}
 .sticky {
   position: fixed;
   top: 0;
@@ -135,10 +141,6 @@ p {
   float: left;
   padding-left: 50px;
   margin-top: 2vw;
-}
-
-#bestill {
-  color: rgb(223, 45, 45);
 }
 
 /*IMAGES:*/
