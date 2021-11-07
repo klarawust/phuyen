@@ -552,6 +552,58 @@
         Kr 45
       </p>
     </div>
+    <script>
+      const overskrifter = ["Forrett", "Hovedrett", "Barnemeny", "Dessert", "Varm Drikke"];
+      const underOverskrifter = ["Stekte Nudler", "Stekt Ris"];
+
+      meny = [
+        [/*Forretter*/
+          ["1. Peking suppe", "Kr 59"], ["2. Kung fu suppe", "kr"]
+        ],
+        [/*Hovedretter*/
+          [
+            ["N1. Nudler m/kylling og egg", "Kr 144"]
+          ],
+          [
+            ["R1. Ris m/kylling og egg", "Kr 144"]
+          ]
+
+        ],
+        [/*Barnemeny*/
+
+        ],
+        [/*Dessert*/
+
+        ],
+        [/*Varm drikke*/
+
+        ]
+      ];
+
+      for (let j=0; j < meny.length; j++){
+        console.log(j)
+        document.getElementById("menu").innerHTML += 
+        "<h1>" + overskrifter[j] + "</h1>"
+
+        if (j == 1){/*Hovedretter*/
+          for (h=0; h < meny[1].length; h++){
+            document.getElementById("menu").innerHTML += 
+            "<h2>" + underOverskrifter[h] + "</h2>"
+
+            for (i=0; i < meny[1][h].length; i++){
+              document.getElementById("menu").innerHTML += 
+              "<p>" + meny[1][h][i][0] + "<br/>" + meny[1][h][i][1]
+            }
+          }
+        } 
+        else {/*Ikke hovedretter*/
+          for (i=0; i < meny[j].length; i++){
+            document.getElementById("menu").innerHTML += 
+            "<p>" + meny[j][i][0] + "<br/>" + meny[j][i][1]
+            }
+        }
+      }
+    </script>
     <script src="scripts/modularity.js"></script>
     <script src="scripts/dropDownMenu.js"></script>
   </body>
