@@ -17,4 +17,5 @@ menuDropdown.appendChild(dropdown3)
 
 menuLink.onmouseover = function(){
     menuLink.style.backgroundColor = "lightgrey";
+    menuDropdown.style.display = "block"
 }
