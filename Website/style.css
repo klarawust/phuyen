@@ -242,6 +242,15 @@ p {
   max-width: 500px;
   padding: 20px;
 }
+#menuFilter {
+  display: inline-block;
+}
+#menuFilter input{
+  display: inline-block;
+  border: solid 1px red;
+  height: 20px;
+  width: 20px;
+}
 
 /*ABOUT*/
 #aboutContainer {
