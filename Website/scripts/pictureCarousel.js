@@ -1,4 +1,5 @@
 var slideIndex = 0;
+var timeoutID;
 const slides = document.getElementsByClassName("slides");
 
 function showImage(index) {
@@ -17,7 +18,8 @@ function incrementIndex() {
     slideIndex = 0;
   }
   showImage(slideIndex);
-  startTimer();
+  clearTimeout(timeoutID);
+  timeoutID = startTimer();
 }
 
 function decrementIndex() {
@@ -28,14 +30,15 @@ function decrementIndex() {
     slideIndex = slides.length - 1;
   }
   showImage(slideIndex);
-  startTimer();
+  clearTimeout(timeoutID);
+  timeoutID = startTimer();
 }
 
 function startTimer() {
-  setTimeout(incrementIndex, 5000);
+  return setTimeout(incrementIndex, 5000);
 }
 
 showImage(slideIndex);
-startTimer();
+timeoutID = startTimer();
 
 
