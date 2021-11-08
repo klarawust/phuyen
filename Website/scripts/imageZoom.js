@@ -9,11 +9,10 @@ function zoomImage(event) {
     zoomBackground.appendChild(zoomedImage);
 
     document.body.appendChild(zoomBackground);
+    window.removeEventListener("scroll", setStickyHeader); // remove listener
 
     for (i = 1; i <= 1.5; i+= 0.1) {
         zoomedImage.style.transform = "scale(" + String(i) + ")";
     }
-
-
 
 }
