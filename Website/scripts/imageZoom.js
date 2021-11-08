@@ -1,4 +1,4 @@
-function zoomImage(event) {
+function zoomIn(event) {
     const clickedImage = event.currentTarget;
     const zoomedImage = document.createElement("img");
     zoomedImage.src = clickedImage.src;
@@ -14,5 +14,8 @@ function zoomImage(event) {
     for (i = 1; i <= 1.5; i+= 0.1) {
         zoomedImage.style.transform = "scale(" + String(i) + ")";
     }
+}
 
+function zoomOut() {
+    
 }
