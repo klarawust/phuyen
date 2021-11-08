@@ -18,7 +18,6 @@ function incrementIndex() {
     slideIndex = 0;
   }
   showImage(slideIndex);
-  clearTimeout(timeoutID);
   timeoutID = startTimer();
 }
 
@@ -30,11 +29,11 @@ function decrementIndex() {
     slideIndex = slides.length - 1;
   }
   showImage(slideIndex);
-  clearTimeout(timeoutID);
   timeoutID = startTimer();
 }
 
 function startTimer() {
+  clearTimeout(timeoutID);
   return setTimeout(incrementIndex, 5000);
 }
 
