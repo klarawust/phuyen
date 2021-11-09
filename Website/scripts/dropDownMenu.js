@@ -28,10 +28,8 @@ menuDropdown.appendChild(dropdown5)
 menuDropdown.appendChild(dropdown6)
 
 menuLink.onmouseover = function(){
-    menuLink.style.backgroundColor = "lightgrey";
     menuDropdown.style.display = "block";
 }
 headerDiv.onmouseleave = function(){
-    menuLink.style.backgroundColor = "inherit";
     menuDropdown.style.display = "none";
 }
