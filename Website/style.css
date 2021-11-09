@@ -48,7 +48,6 @@ p {
 
 /* HEADER */
 .header {
-  overflow: hidden;
   width: 100%;
   background-color: #eeeded;
   border-bottom: 3px solid rgb(216, 24, 24);
@@ -97,16 +96,33 @@ p {
 }
 
 /*DROPDOWN*/
-.dropDown {
+#dropDown {
   display: none;
   position: absolute;
-  background-color: blue;
+  background-color: lightgrey;
+  border: solid red 2px;
+  border-top: none;
   width: 9vw;
-  overflow: visible;
+  overflow: hidden;
+  margin-top: 16%;
+  z-index: 1;
 }
-.dropDown a {
-  position: absolute;
+#dropDown a {
+  text-align: center;
+  width: 9vw;
+  padding-top: 2%;
   display: block;
+  font-size: 1vw;
+}
+@media only screen and (max-width: 800px) {
+  #dropDown {
+    width: 17vw;
+    margin-top: 12%;
+  }
+  #dropDown a {
+    font-size: 2vw;
+    width: 17vw;
+  }
 }
 
 /* FOOTER */
@@ -240,7 +256,11 @@ p {
 
 
 /*MENU*/
-
+#menuFilter {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 2%;
+}
 #menu {
   margin: 0% 7% 0% 7%;
   text-align: center;
