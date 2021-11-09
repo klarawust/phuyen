@@ -211,58 +211,28 @@ p {
 
 /*Info page*/
 
-.container {
-  width: 94%;
-  float: left;
-  justify-content: center;
-  padding-left: 2%;
-  padding-top: 6%;
-  padding-right: 2%;
-  align-self: center;
+#content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
-.ul {
-  list-style-type: square;
-  font-size: 24pt;
-}
-.textContainer {
-  max-width: 40%;
-  position: relative;
-  justify-content: center;
-  float: left;
-  padding-left: 2%;
-  padding-right: 2%;
-}
-
-.mapouter {
-  position: sticky;
-  text-align: right;
-  max-height: 550px;
-  max-width: 850px;
-  justify-content: left;
-  padding-right: 4%;
-  padding-left: 1%;
+#textContainer {
+  width: 25%;
   float: left;
 }
 
-.gmap_canvas {
-  overflow: hidden;
+#map {
+  width: 30%;
+  float: left;
   background: none !important;
-  height: 500px;
-  width: 600px;
-  float: left;
-  justify-content: left;
-  padding: auto;
 }
 
-.FacebookWidget {
-  justify-content: right;
+#FacebookWidget {
+  width: 20%;
   float: left;
-  position: relative;
-  padding-left: 4%;
-  width: 400px;
-  height: 500px;
 }
+
 /*MENU*/
 
 #menu {
