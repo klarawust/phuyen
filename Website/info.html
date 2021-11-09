@@ -8,48 +8,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="content">
-      <div id="map">
-        <iframe
-          width="300"
-          height="250"
-          id="gmap_canvas"
-          src="https://maps.google.com/maps?q=Repslagerveita%202&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          scrolling="no"
-        ></iframe>
-      </div>
-
-      <!-- Information text -->
-      <div id="textContainer">
-        <h1>Kontaktinformasjon og åpningstider</h1>
-        <h2>
-          Telefonnummer:
-          <a class="doclinks" href="tel:+47 73 52 99 50"> 73 52 99 50</a>
-        </h2>
-        <p>
-          Mandag: stengt <br />
-          Tirsdag: 14:00 – 22:00<br />
-          Onsdag: 14:00 – 22:00<br />
-          Torsdag: 14:00 – 22:00<br />
-          Fredag: 14:00 – 22:00<br />
-          Lørdag: 14:00 – 22:00<br />
-          Søndag: 14:00 – 22:00<br />
-        </p>
+    <div id="infoContainer">
+      <div id="contactLocation">
+        <div id="contactInfo">
+          <h1>Kontaktinformasjon og åpningstider</h1>
+          <h2>
+            Telefonnummer:
+            <a class="doclinks" href="tel:+47 73 52 99 50"> 73 52 99 50</a>
+          </h2>
+          <p>
+            Mandag: stengt <br />
+            Tirsdag: 14:00 – 22:00<br />
+            Onsdag: 14:00 – 22:00<br />
+            Torsdag: 14:00 – 22:00<br />
+            Fredag: 14:00 – 22:00<br />
+            Lørdag: 14:00 – 22:00<br />
+            Søndag: 14:00 – 22:00<br />
+          </p>
+        </div>
+        <iframe id="map" src="https://maps.google.com/maps?q=Repslagerveita%202&t=&z=13&ie=UTF8&iwloc=&output=embed" scrolling="yes"></iframe>
       </div>
 
       <!-- Facebook widget with timeline, events and messages -->
-      <div id="FacebookWidget">
-        <iframe
-          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpg%2FPhu-Yen-Restaurant-110354767819844%2F&tabs=timeline%2Cmessages%2Cevents%2C&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
-          width="600"
-          height="600"
-          style="border: none; overflow: hidden"
-          scrolling="no"
-          frameborder="0"
-          allowfullscreen="true"
-          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-        ></iframe>
-      </div>
+      <iframe id="facebookWidget" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpg%2FPhu-Yen-Restaurant-110354767819844%2F&tabs=timeline%2Cmessages%2Cevents%2C&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"></iframe>
     </div>
     <script src="scripts/modularity.js"></script>
   </body>
