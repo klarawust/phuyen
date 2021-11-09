@@ -39,5 +39,3 @@ function startTimer() {
 
 showImage(slideIndex);
 timeoutID = startTimer();
-
-
