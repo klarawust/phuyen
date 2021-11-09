@@ -91,6 +91,7 @@ p {
   }
   #logo {
     content: none;
+    width: 50%;
   }
 }
 
