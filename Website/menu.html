@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="internReferanser">
+      <a href="#Husetsspesialiteter">Husets spesialiteter</a>
+      <a href="#Forretter">Forretter</a>
+      <a href="#Hovedretter">Hovedretter</a>
+      <a href="#Desserter">Desserter</a>
+    </div>
     <div id="menuFilter">
-      <input type="checkbox" name="kjøtt">
-      <label for="kjøtt">Kjøtt</label>
-      <input type="checkbox" name="kylling">
-      <label for="kylling">Kylling</label>
-      <input type="checkbox" name="vegetar">
+      <input type="checkbox" name="vegetar" id="vegetarCheck" onchange="check()">
       <label for="vegetar">Vegetar</label>
-      <input type="checkbox" name="PadThai">
-      <label for="PadThai">Padthai</label>
     </div>
     <div id="menu"></div>
     <script id="populateMenu">
@@ -259,25 +259,33 @@
       ];
 
       for (let j = 0; j < meny.length; j++) {
-        console.log(j);
-        document.getElementById("menu").innerHTML +=
+        const overDiv = document.createElement("div");
+        overId = overskrifter[j].replace(" ", "");
+        overDiv.id = overId;
+        overDiv.innerHTML +=
           "<h1>" + overskrifter[j] + "</h1>";
+        document.getElementById("menu").append(overDiv);
 
         if (j == 2) {
           /*Hovedretter*/
           for (h = 0; h < meny[j].length; h++) {
-            document.getElementById("menu").innerHTML +=
+            const underDiv = document.createElement("div");
+            underId = underOverskrifter[h].replace(" ", "");
+            underDiv.id = underId;
+            underDiv.innerHTML +=
               "<h2>" + underOverskrifter[h] + "</h2>";
+            overDiv.append(underDiv);
+            
 
             for (i = 0; i < meny[j][h].length; i++) {
-              document.getElementById("menu").innerHTML +=
+              underDiv.innerHTML +=
                 "<p>" + meny[j][h][i][0] + "<br/>" + meny[j][h][i][1];
             }
           }
         } else {
           /*Ikke hovedretter*/
           for (i = 0; i < meny[j].length; i++) {
-            document.getElementById("menu").innerHTML +=
+            overDiv.innerHTML +=
               "<p>" + meny[j][i][0] + "<br/>" + meny[j][i][1];
           }
         }
@@ -285,5 +293,6 @@
     </script>
     <script src="scripts/modularity.js"></script>
     <script src="scripts/dropDownMenu.js"></script>
+    <script src="scripts/filter.js"></script>
   </body>
 </html>
