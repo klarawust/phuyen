@@ -86,9 +86,9 @@ p {
   padding-top: 10px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   #links {
-    font-size: 2vw;
+    font-size: 2.2vw;
   }
   #logo {
     width: 13vw;
@@ -99,8 +99,8 @@ p {
 #dropDown {
   display: none;
   position: absolute;
-  background-color: lightgrey;
-  border: solid red 2px;
+  background-color: rgb(248, 248, 248);
+  border: solid rgb(255, 255, 255) 8px;
   border-top: none;
   width: 9vw;
   overflow: hidden;
@@ -110,18 +110,19 @@ p {
 #dropDown a {
   text-align: center;
   width: 9vw;
-  padding-top: 2%;
+  padding-top: 5%;
   display: block;
-  font-size: 1vw;
+  font-size: 1.2vw;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   #dropDown {
-    width: 17vw;
+    width: 20vw;
     margin-top: 12%;
   }
   #dropDown a {
-    font-size: 2vw;
-    width: 17vw;
+    font-size: 2.2vw;
+    padding-top: 15%;
+    width: 20vw;
   }
 }
 
@@ -138,12 +139,12 @@ p {
 /*HOMEPAGE:*/
 
 .image-carousel {
+  position: relative;
+  float: left;
   width: 60%;
   max-width: 40vw;
-  position: relative;
   margin-top: 2vw;
   margin-left: 5vw;
-  float: left;
 }
 .slides {
   display: none;
@@ -248,12 +249,19 @@ p {
   overflow: scroll;
 }
 
-
 #map {
   min-width: 500px;
   min-height: 200px;
 }
 
+@media only screen and (max-width: 1200px) {
+  #infoContainer {
+    padding: 2% 10% 5% 10%;
+  }
+  #map {
+    margin: 0% 0% 10% 0%;
+  }
+}
 
 /*MENU*/
 #menuFilter {
@@ -289,7 +297,7 @@ p {
   float: left;
   padding-top: 7%;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
   #aboutustext {
     width: 80%;
   }
