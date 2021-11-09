@@ -63,7 +63,7 @@ p {
   padding: 0% 8%;
   align-items: baseline;
   font-family: Andale Mono, monospace;
-  font-size: 1.3vw;
+  font-size: 1.5vw;
 }
 
 #links a {
@@ -85,6 +85,18 @@ p {
   align-items: baseline;
   padding-top: 10px;
 }
+<<<<<<< HEAD
+=======
+
+@media only screen and (max-width: 800px) {
+  #links {
+    font-size: 2vw;
+  }
+  #logo {
+    width: 13vw;
+  }
+}
+>>>>>>> 1d205ef6e6f24402bd10aacbc537373245c6013e
 
 /*DROPDOWN*/
 .dropDown {
@@ -98,7 +110,6 @@ p {
   position: absolute;
   display: block;
 }
-
 
 /* FOOTER */
 .footer {
@@ -158,6 +169,23 @@ p {
   margin-top: 2vw;
 }
 
+@media only screen and (max-width: 900px) {
+  .velkommen {
+    width: 80%;
+    text-align: center;
+  }
+  .image-carousel {
+    width: 100%;
+    max-width: 70vw;
+    float: left;
+    padding-left: 8%;
+  }
+  .prev,
+  .next {
+    top: 20vw;
+  }
+}
+
 /*IMAGES: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
 .row {
   display: flex;
@@ -175,6 +203,13 @@ p {
   margin-top: 10px;
   vertical-align: middle;
   width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .column {
+    flex: 40%;
+    max-width: 50%;
+  }
 }
 
 /*Info page*/
@@ -242,19 +277,6 @@ p {
   max-width: 500px;
   padding: 20px;
 }
-#menuFilter {
-  display: flex;
-  justify-content: center;
-  padding: 20px 20px;
-}
-#menuFilter label{
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  color: black;
-  font-size: 20px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
 
 /*ABOUT*/
 #aboutContainer {
@@ -265,13 +287,21 @@ p {
 }
 
 #aboutustext {
-  flex-shrink: 1;
-  width: 30%;
-  padding: 2% 0% 5% 10%;
+  width: 40%;
+  float: left;
+  padding-top: 2%;
 }
 #facade {
-  flex-shrink: 0;
   width: 40%;
-  min-width: 500px;
-  padding: 7% 10% 0% 10%;
+  float: left;
+  padding-top: 7%;
+}
+@media only screen and (max-width: 1000px) {
+  #aboutustext {
+    width: 80%;
+  }
+  #facade {
+    width: 80%;
+    padding: 3% 0% 10% 0%;
+  }
 }
