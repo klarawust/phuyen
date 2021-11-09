@@ -52,7 +52,7 @@ p {
 
 .zoom-background {
   position: fixed;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   width: 100%;
