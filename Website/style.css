@@ -85,6 +85,14 @@ p {
   align-items: baseline;
   padding-top: 10px;
 }
+@media only screen and (max-width: 800px){
+  #links {
+    font-size: 3vw;
+  }
+  #logo {
+    content: none;
+  }
+}
 
 /*DROPDOWN*/
 .dropDown {
@@ -243,13 +251,17 @@ p {
   padding: 20px;
 }
 #menuFilter {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px;
 }
-#menuFilter input{
-  display: inline-block;
-  border: solid 1px red;
-  height: 20px;
-  width: 20px;
+#menuFilter label{
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: black;
+  font-size: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 /*ABOUT*/
