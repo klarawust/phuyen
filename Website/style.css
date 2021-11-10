@@ -80,7 +80,7 @@ p {
   padding: 0% 8%;
   align-items: baseline;
   font-family: Andale Mono, monospace;
-  font-size: 1.5vw;
+  font-size: 1.7vw;
 }
 
 #links a {
@@ -103,12 +103,12 @@ p {
   padding-top: 10px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   #links {
-    font-size: 2.2vw;
+    font-size: 2.4vw;
   }
   #logo {
-    width: 13vw;
+    width: 10vw;
   }
 }
 
