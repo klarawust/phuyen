@@ -278,6 +278,9 @@ p {
   max-width: 500px;
   padding: 20px;
 }
+#menu h1{
+  scroll-margin-top: 100px;
+}
 /*ABOUT*/
 #aboutContainer {
   display: flex;
