@@ -8,7 +8,7 @@ linksDiv.id = "links";
 
 const menuLink = document.createElement("a");
 menuLink.href = "menu.html";
-menuLink.id = "menuLink"
+menuLink.id = "menuLink";
 menuLink.innerHTML = "Meny";
 
 const infoLink = document.createElement("a");
@@ -59,7 +59,7 @@ number.innerHTML = "73 52 99 50";
 const creditParagraph = document.createElement("p");
 creditParagraph.className = "footerText";
 creditParagraph.innerHTML =
-  "Nettside laget av: Aksel, Eiril, Erik, Jens og Klara Wüstenberg, ved NTNU Trondheim (2021)";
+  "Nettside laget av: Aksel Lessum, Eiril Ugulen, Erik Gule Paulsen, Jens Waage og Klara Wüstenberg, gr. ved NTNU Trondheim (2021)";
 
 phoneParagraph.append(number);
 footerDiv.append(phoneParagraph);
