@@ -33,6 +33,7 @@ p {
   font-size: 15px;
   line-height: 1.8em;
 }
+/*alle document-links bortsett fra menylinjen*/
 .doclinks {
   color: rgb(190, 21, 21);
   text-decoration: none;
@@ -40,17 +41,17 @@ p {
 .doclinks:hover {
   text-decoration: underline;
 }
+/*sticky header*/
 .sticky {
   position: fixed;
   top: 0;
   z-index: 90;
 }
-
+/*image zoom function*/
 .zoomed-image {
   max-width: 50%;
   max-height: 50%;
 }
-
 .zoom-background {
   position: fixed;
   top: 0;
@@ -69,11 +70,17 @@ p {
   background-color: #eeeded;
   border-bottom: 3px solid rgb(216, 24, 24);
 }
-
+/*logoen*/
 #homepageLink {
   width: 18vw !important;
 }
-
+#logo {
+  position: relative;
+  width: 100%;
+  align-items: baseline;
+  padding-top: 10px;
+}
+/*titlene i menylinjen*/
 #links {
   display: flex;
   justify-content: space-between;
@@ -82,7 +89,6 @@ p {
   font-family: Andale Mono, monospace;
   font-size: 1.7vw;
 }
-
 #links a {
   position: relative;
   text-align: center;
@@ -91,16 +97,8 @@ p {
   width: 9vw;
   height: 3vw;
 }
-
 #links a:hover {
   color: rgb(216, 24, 24);
-}
-
-#logo {
-  position: relative;
-  width: 100%;
-  align-items: baseline;
-  padding-top: 10px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -153,7 +151,8 @@ p {
   border-top: 3px solid rgb(216, 24, 24);
 }
 
-/*HOMEPAGE:*/
+/*HOMEPAGE.HTML*/
+/*Image-carousel kode inspirert av denne: https://www.w3schools.com/howto/howto_js_slideshow.asp */
 
 .image-carousel {
   position: relative;
@@ -163,9 +162,11 @@ p {
   margin-top: 2vw;
   margin-left: 5vw;
 }
+/*viser bare et bilde om gangen i bildekarusellen*/
 .slides {
   display: none;
 }
+/*frem og tilbake knappene*/
 .prev,
 .next {
   cursor: pointer;
@@ -186,6 +187,7 @@ p {
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+/*tellefunksjonen i øverste venstre hjørnet av bildekarusellen*/
 .number {
   color: #fdfdfd;
   font-size: 14px;
@@ -193,7 +195,7 @@ p {
   position: absolute;
   font-family: Andale Mono, monospace;
 }
-
+/*teksten på forsiden*/
 .velkommen {
   width: 40%;
   float: left;
@@ -218,7 +220,8 @@ p {
   }
 }
 
-/*IMAGES: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
+/*IMAGES.HTML*/
+/*Inspirert av denne: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -244,8 +247,9 @@ p {
   }
 }
 
-/*Info page*/
+/*INFO.HTML*/
 
+/*hele innholdet på info-siden*/
 #infoContainer {
   margin-top: 2%;
   display: flex;
@@ -255,6 +259,7 @@ p {
   align-items: stretch;
 }
 
+/*tekst og kartet*/
 #contactLocation {
   display: flex;
   flex-direction: column;
@@ -280,7 +285,7 @@ p {
   }
 }
 
-/*MENU*/
+/*MENU.HTML*/
 #menuFilter {
   text-align: center;
   font-size: 20px;
@@ -298,7 +303,7 @@ p {
 #menu h1 {
   scroll-margin-top: 100px;
 }
-/*ABOUT*/
+/*ABOUT.HTML*/
 #aboutContainer {
   display: flex;
   justify-content: space-evenly;

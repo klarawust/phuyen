@@ -1,3 +1,4 @@
+//Image-carousel kode inspirert av denne: https://www.w3schools.com/howto/howto_js_slideshow.asp//
 var slideIndex = 0;
 var timeoutID;
 const slides = document.getElementsByClassName("slides");
