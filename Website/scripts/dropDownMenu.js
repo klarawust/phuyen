@@ -33,3 +33,6 @@ menuLink.onmouseover = function(){
 headerDiv.onmouseleave = function(){
     menuDropdown.style.display = "none";
 }
+window.addEventListener("hashchange", function () {/*Noe kode lånt fra stackoverflow*/
+    window.scrollTo(window.scrollX, window.scrollY - 130);
+});
