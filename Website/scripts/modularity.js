@@ -1,3 +1,16 @@
+/**Set sticky header on scroll. Inspiration from https://www.w3schools.com/howto/howto_js_sticky_header.asp*/
+function setStickyHeader() {
+  var header = document.getElementById("header");
+
+  if (window.scrollY > 0) {
+    header.classList.add("sticky"); // add sticky CSS class which fixes position and pushes to the front
+    document.body.style.paddingTop = String(header.offsetHeight) + "px"; // pad body with height of header to avoid jumps when scrolling
+  } else {
+    header.classList.remove("sticky");
+    document.body.style.paddingTop = 0;
+  }
+}
+
 /** Initialize header */
 const headerDiv = document.createElement("div");
 headerDiv.className = "header";
@@ -70,14 +83,3 @@ document.body.appendChild(footerDiv);
 
 window.addEventListener("scroll", setStickyHeader); // dynamically set header to be sticky
 
-function setStickyHeader() {
-  var header = document.getElementById("header");
-
-  if (window.scrollY > 0) {
-    header.classList.add("sticky");
-    document.body.style.paddingTop = String(header.offsetHeight) + "px";
-  } else {
-    header.classList.remove("sticky");
-    document.body.style.paddingTop = 0;
-  }
-}
