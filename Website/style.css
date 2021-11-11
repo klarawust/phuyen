@@ -147,8 +147,11 @@ p {
   margin-top: 2%;
   background-color: #eeeded;
   text-align: center;
-  font-size: 8px;
   border-top: 3px solid rgb(216, 24, 24);
+}
+.footerText {
+  font-size: 13px;
+  line-height: 1em;
 }
 
 /*HOMEPAGE.HTML*/
