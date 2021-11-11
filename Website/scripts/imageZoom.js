@@ -1,6 +1,8 @@
 const zoomBackground = document.createElement("div");
 zoomBackground.classList.add("zoom-background");
+zoomBackground.addEventListener("click", zoomOut);
 document.body.appendChild(zoomBackground);
+document.addEventListener("keydown", zoomOut)
 
 const images = document.getElementsByTagName("img");
 for(i = 0; i < images.length; i++) {
@@ -16,7 +18,7 @@ function zoomIn(event) {
     zoomedImage.src = clickedImage.src;
     zoomedImage.classList.add("zoomed-image");
     zoomedImage.id = clickedImage.id + "-zoom";
-    zoomedImage.addEventListener("click", zoomOut);
+    //zoomedImage.addEventListener("click", zoomOut);
 
     zoomBackground.style.display = "flex";
     
@@ -28,8 +30,9 @@ function zoomIn(event) {
 }
 
 function zoomOut(event) {
-    const zoomedImage = event.currentTarget;
-    zoomBackground.style.display = "none";
-    zoomBackground.removeChild(zoomedImage);
+    if (event.type == "click" || event.key == "Escape") {
+        zoomBackground.style.display = "none";
+        zoomBackground.innerHTML = "";
+    }
 }
 
