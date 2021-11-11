@@ -13,7 +13,7 @@ menuLink.innerHTML = "Meny";
 
 const infoLink = document.createElement("a");
 infoLink.href = "info.html";
-infoLink.innerHTML = "Info/kontakt";
+infoLink.innerHTML = "Info";
 
 const logo = document.createElement("img");
 const homepageLink = document.createElement("a");
