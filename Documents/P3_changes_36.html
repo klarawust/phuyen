@@ -119,11 +119,8 @@
         <h3><u>javaScript</u></h3>
         <b>modularity.js:</b>
         <p>Vi la til modularity.js på grunn av headeren og footeren som er felles for alle sidene. 
-            Kravet om modularitet blir i stor grad håndtert her. Alle html-dokumentene har en script 
-            source til modularity.js, (og Aksel (?) hadde hovedansvar for implementasjonen. --> står 
-            i P3: "Indicate how the modularity requirement was handled and who was responsible for 
-            the implementation" men eksempelet har ikkje nevnt navn så igjen idk)</p>
-        <p>la til modularity.js</p>
+            Kravet om modularitet blir i stor grad håndtert her. Scriptet instansierer header og footer HTML-elementer og legger på en event handler
+            for å gjøre headeren sticky når man scroller. Alle HTML-sidene kjører dette scriptet når de lastes. Dette ble implenetert av Jens.</p>
         <b>pictureCarousel.js:</b>
         <p>I steden for å ha bildekarusellen i midten valgte vi å plaserre 
             den til venstre på siden for at det skulle bli mer ryddig med teksten og lettere å lese. 
