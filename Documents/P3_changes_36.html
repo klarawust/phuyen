@@ -165,12 +165,14 @@
                 </li>
                 <li>
                   Størrelser: 
-                  opprinnelig plan: 16 pt i navbar. 12 pt i annen tekst. (20 pt i kontaktinformasjon)
-                  vi valgte størrelsene 30px for h1 overskrifter, 20px for h2 og 15px for h3.
+                  Opprinnelig plan: 16 pt i navbar, 12 pt i annen tekst, (20 pt i kontaktinformasjon).
+                  Vi valgte størrelsene 30px for h1 overskrifter, 20px for h2 og 15px for h3.
                   For footeren valgte vi skirftstørrelse 8px.
                   For annen tekst (p) har vi valgt skriftstørrelse 15px. 
                   For linkene (navbar) valgte vi skirftstørrelse 1.3vw som endrer seg i forhold til 
-                  størrelsen på skjermen. 
+                  størrelsen på skjermen. Når skjermen blir mindre i bredden enn 1000px, øker fontstørrelsen 
+                  til 2.4vw i navbaren. Dette er fordi teksten blir mindre og mindre når vi bruker 
+                  viewwidth-skriftstørrelsen, og for at det fortsatt skal være leselig på liten skjerm måtte vi forstørre. 
                 </li>
               </ul>
             </li>
@@ -183,21 +185,30 @@
               </ul>
             </li>
             <li>
-              Lenker: Logoen/hovudtittelen "Phu Yen" er klikkbar og tar brukeren tilbake til
-              hovedsiden. Den har bredde 18vw som endrer seg i forhold til størrelsen på skjermen. 
-              !!!!!!!!!!!!!!!!!!!Meny-fanen har en dropdown-meny med klikkbare lenker,
+              Lenker: <br>Logoen/hovudtittelen "Phu Yen" er klikkbar og tar brukeren tilbake til
+              hovedsiden. Den har bredde 18vw som endrer seg i forhold til størrelsen på skjermen. Når 
+              skjermen blir under 1000px, minker logoen størrelse til 10vw, fordi det må være plass til 
+              skriften på lenkene i navbaren. Logoen er derfor ikke det mest synlige lenger, men dette er 
+              for å forbedre brukervennligheten på liten skjerm. Meny-fanen har en dropdown-meny med klikkbare lenker, 
+              som fører brukeren til det punktet i menyen som lenkene henviser til. For eksempel fører "barnemeny"-lenken 
+              til det stedet i menyen hvor underoverskriften barnemeny ligger. 
             </li>
             <li>
-              Navigasjonsbaren: er plassert øverst på siden under logoen. Vi bestemte oss
-              for at teksten er svart, og når musepekeren hovrer over blir den rød. 
+              Navigasjonsbaren og logo: <br> Disse er plassert øverst på siden. Vi bestemte oss
+              for at teksten er svart, og når musepekeren hovrer over blir den rød. Vi gikk bort fra å
+              ha en header over navigasjonsbaren som inneholder logoen og info. Denne header tok for mye av 
+              skjermplassen. Vi bestemte oss istedet for å ha logoen inni navigasjonsbaren. Logoen er større
+              enn de andre linkene i baren, men liten nok til at den kan bli liggende der selv om man blar 
+              nedover på siden. I utkastet hadde vi en menylinje uten logo når man var på de andre HTML-sidene. 
+              Logoen er en stor del av uttrykket til restauranten, så det var viktig at vi fikk implementert denne 
+              på alle sidene. Slik vi løste det, er den synlig fra alle sidene man er på. Vi har nå fått tak i ekte logo og ikke
+              bare tekst-navn. 
             </li>
             <li>
-              Footer: nederst på alle sider, vi bestemte oss for at den inneholder denne informajsonen:
-              telefonnummer til restauranten, adressen til restauranten og våre navn. footeren har den
+              Footer: <br>
+              Denne ligger nederst på alle sider, vi bestemte oss for at den inneholder denne informasjonen:
+              Telefonnummer til restauranten, adressen til restauranten og våre navn. Footeren har den
               samme lyse beige fargen som navbaren. 
-            </li>
-            <li>Logo: øverst i midten på siden. Vi har nå fått tak i ekte logo og ikke
-                bare tekst-navn. 
             </li>
           </ul>
 
@@ -248,7 +259,6 @@
 
 
         <h2>Endelig inndeling av arbeidsoppgaver</h2>
-        ?????? kan vi berre ha den samme her ?????? Endra biiiittelitt så det ikkje skulle ver kliss likt men..<br>
         Vi har hatt hovudansvar for hver våre ting men hjulpet hverandre der det trengs og jobbet 
         sammen hver uke, så arbeidsfordelingen har vært litt flytende. I visse perioder har noen 
         bedre tid, og i andre perioder er det noen andre som har bedre tid, og da prioriterte vi 
@@ -287,38 +297,38 @@
             </tr>
             <tr>
               <td>info.html</td>
-              <td>Kontaktinformasjon, åpningsstider, lokasjon og Facebbookoppdateringer</td>
+              <td>Kontaktinformasjon, maps-lokasjon og Facebook</td>
               <td>Erik</td>
               <td>24.10.21</td>
             </tr>
             <tr>
-              <td>alle bilder</td>
-              <td>Stemningsbilder</td>
+              <td>Alle bilder</td>
+              <td>Samle bilder</td>
               <td>Klara</td>
               <td>17.10.21</td>
             </tr>
             <tr>
               <td>pictureCarousel.js</td>
               <td>Bildekarusell JS script</td>
-              <td>Aksel</td>
+              <td>Klara</td>
               <td>07.11.21</td>
             </tr>
             <tr>
               <td>dropDownMenu.js</td>
               <td>Animert dropdown-meny til menylinjen</td>
-              <td>Klara</td>
+              <td>Aksel</td>
               <td>07.11.21</td>
             </tr>
             <tr>
               <td>menuFilter.js</td>
               <td>Filtrering av retter i menyen</td>
-              <td>Jens</td>
+              <td>Aksel</td>
               <td>07.11.21</td>
             </tr>
             <tr>
               <td>imageZoom.js</td>
               <td>Forstørrelse av bilder ved klikk</td>
-              <td>Eiril</td>
+              <td>Jens</td>
               <td>07.11.21</td>
             </tr>
             <tr>
@@ -332,7 +342,7 @@
               <td>Testing, feilsøking, CSS-endringer,
                   gå over "ofte oversette feil" beskrevet i P3
               </td>
-              <td>Alle</td>
+              <td>Eiril, alle</td>
               <td>11.11.21</td>
             </tr>
           </table>
