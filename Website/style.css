@@ -271,13 +271,11 @@ p {
 }
 
 #facebookWidget {
-  min-height: 300px;
-  min-width: 500px;
+  min-width: 26%;
   overflow: scroll;
 }
 
 #map {
-  min-width: 500px;
   min-height: 200px;
 }
 
